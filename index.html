@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>clock 2.0 demo</title>
+	<link rel="stylesheet" href="css/clock.css">
+	<script type="text/javascript" src="js/clock.js"></script>
+	<script type="text/javascript">
+	window.addEventListener("load", function() {
+		var clockConfig = {
+		//			  [bgColor, borderColor, color]
+			month	: ["black", "silver", "white"],
+			day		: ["black", "white", "white"],
+			hours	: ["white", "silver", "black"],
+			minutes	: ["gray", "white", "white"],
+			seconds	: ["white", "black", "black"],
+		//			  [lineColor, radius ratio]
+			needle	: ["red", 0.005]
+		};
+		// 		  (radius, container, isExtended, configuratinObj)
+		new Clock(350, document.body, true, clockConfig);
+	});
+	</script>
+</head>
+<body>
+</body>
+</html>	
